@@ -6,7 +6,8 @@
     "dev:server": "bun --watch index.ts",
     "start": "bun index.ts",
     "migrate": "prisma migrate dev",
-    "generate": "prisma generate"
+    "generate": "prisma generate",
+    "test": "bun test"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -17,6 +18,7 @@
   },
   "dependencies": {
     "@prisma/client": "^6.0.0",
-    "hono": "^4.6.12"
+    "hono": "^4.6.12",
+    "zod": "^3.23.8"
   }
 }
