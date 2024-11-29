@@ -15,10 +15,6 @@ describe('Database Queries', () => {
 
     await prisma.$connect()
     
-    // Reset database and run migrations
-    await prisma.toDo.deleteMany({})
-    await prisma.user.deleteMany({})
-    
     
     const testUser = await prisma.user.create({
       data: {
