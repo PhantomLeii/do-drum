@@ -2,10 +2,17 @@
   "name": "doomingo",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev:server": "bun --watch index.ts",
+    "start": "bun index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "hono": "^4.6.12"
   }
 }
