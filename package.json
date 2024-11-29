@@ -9,12 +9,14 @@
     "generate": "prisma generate"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prisma": "^6.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@prisma/client": "^6.0.0",
     "hono": "^4.6.12"
   }
 }
