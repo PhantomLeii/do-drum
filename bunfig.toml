@@ -1,0 +1,1 @@
+test = { dir = "__tests__", env = "test" }
