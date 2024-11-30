@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client"
 import type { z } from "zod"
-import { createTodoSchema } from "@/schemas"
+import { createTodoSchema } from "../schemas"
 
 const prisma = new PrismaClient()
 

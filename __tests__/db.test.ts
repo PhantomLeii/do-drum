@@ -2,7 +2,7 @@ import { expect, test, describe, beforeAll, afterAll } from 'bun:test'
 import { PrismaClient } from '@prisma/client'
 import { execSync } from 'child_process'
 
-import { createTodo, getTodos, getTodoById, deleteTodo  } from '@/db'
+import { createTodo, getTodos, getTodoById, deleteTodo  } from '../db'
 
 const prisma = new PrismaClient({ datasources: { db: { url: 'postgresql://root:1234@localhost:5432/postgres_test' } } })
 let testUserId: number
