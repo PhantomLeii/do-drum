@@ -4,7 +4,7 @@ import { execSync } from 'child_process'
 
 import { createTodo, getTodos, getTodoById, deleteTodo  } from '../db'
 
-const prisma = new PrismaClient({ datasources: { db: { url: 'postgresql://root:1234@localhost:5432/postgres_test' } } })
+const prisma = new PrismaClient({ datasources: { db: { url: process.env.TEST_DATABASE_URL } } })
 let testUserId: number
 
 describe('Database Queries', () => {
